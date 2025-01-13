@@ -16,6 +16,7 @@
 		847EF4012D2B09B100700877 /* MacReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EF4002D2B09B100700877 /* MacReaderUITestsLaunchTests.swift */; };
 		847EF40F2D2B0A1200700877 /* MacReaderCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847EF40D2D2B0A1200700877 /* MacReaderCoreData.xcdatamodeld */; };
 		847EF4112D2B121E00700877 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EF4102D2B121E00700877 /* PersistentController.swift */; };
+		84CAB2742D359FF000C60AE7 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAB2732D359FF000C60AE7 /* BookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		847EF4002D2B09B100700877 /* MacReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		847EF40E2D2B0A1200700877 /* MacReaderCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MacReaderCoreData.xcdatamodel; sourceTree = "<group>"; };
 		847EF4102D2B121E00700877 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
+		84CAB2732D359FF000C60AE7 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				847EF3E62D2B09B100700877 /* Assets.xcassets */,
 				847EF3EB2D2B09B100700877 /* MacReader.entitlements */,
 				847EF3E82D2B09B100700877 /* Preview Content */,
+				84CAB2732D359FF000C60AE7 /* BookView.swift */,
 			);
 			path = MacReader;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				847EF40F2D2B0A1200700877 /* MacReaderCoreData.xcdatamodeld in Sources */,
 				847EF4112D2B121E00700877 /* PersistentController.swift in Sources */,
 				847EF3E32D2B09B000700877 /* MacReaderApp.swift in Sources */,
+				84CAB2742D359FF000C60AE7 /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

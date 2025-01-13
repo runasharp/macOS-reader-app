@@ -8,11 +8,46 @@
 import SwiftUI
 
 struct BookView: View {
+    let book: ContentView.BookItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 20) {
+            if let thumbnail = book.thumbnail {
+                AsyncImage(url: thumbnail) { image in
+                    image.resizable()
+                        .scaledToFit()
+                        .frame(maxWidth: .infinity)
+                } placeholder: {
+                    ProgressView()
+                }
+            } else {
+                Image(systemName: "book.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(.gray)
+            }
+            
+            Text(book.title)
+                .font(.largeTitle)
+                .bold()
+            
+            Text("Author: \(book.author)")
+                .font(.title2)
+                .foregroundColor(.secondary)
+            
+            Spacer()
+        }
+        .padding()
+        .navigationTitle("Book Details")
     }
 }
 
 #Preview {
-    BookView()
+    BookView(book: ContentView.BookItem(
+        id: "1",
+        title: "Sample Book Title",
+        author: "Sample Author",
+        thumbnail: URL(string: "loading")
+    ))
 }
